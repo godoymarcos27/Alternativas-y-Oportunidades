@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom'
 export function Nav(props) {
   return (
     <>
@@ -18,26 +20,23 @@ export function Nav(props) {
         <nav className="nav-bar">
           <ul>
             <li>
-              <a href="index.html" className="active">
-                {" "}
-                Inicio
-              </a>
+            <Link to="/" className="active">Inicio</Link>
             </li>
 
             <li>
-              <a href="nosotros.html"> Nosotros</a>
+            <Link to="/nosotros">Nosotros</Link>
             </li>
 
             <li>
-              <a href="Programas_Proyectos.html">Programas y Proyectos</a>
+            <Link to="/programas">Programas y Proyectos</Link>
             </li>
 
             <li>
-              <a href="Biblioteca.html">Biblioteca</a>
+            <Link to="/biblioteca">Biblioteca</Link>
             </li>
 
             <li>
-              <a href="Contacto.html">Contacto</a>
+            <Link to="/contactanos">Contacto</Link>
             </li>
           </ul>
         </nav>
