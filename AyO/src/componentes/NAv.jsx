@@ -27,8 +27,8 @@ export function Nav(props) {
           <div className="line"></div>
         </div>
 
-        <nav className="nav-bar">
-          <ul className= {open_menu ? 'open' : ''}>
+        <nav className="nav-bar"  style={{ display: open_menu ? 'block' : '' }}>
+          <ul>
             <li>
             <Link to="/" className="active">Inicio</Link>
             </li>

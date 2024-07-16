@@ -701,8 +701,8 @@ footer {
     width: 100vw;
     background-color: rgb(81, 81, 81);
     transition: 0.5s;
-    
-    overflow: hidden; 
+    display: none;
+    /* overflow: hidden;  */
   }
 
   .nav-bar.active {
@@ -723,9 +723,9 @@ footer {
     text-align: center;
   }
 
-   .nav-bar.active ul {
-    /* opacity: 1; */
-  } 
+   /* .nav-bar.active ul {
+    opacity: 1;
+  }  */
 
   .nav-bar ul li a {
     margin-bottom: 20px;
