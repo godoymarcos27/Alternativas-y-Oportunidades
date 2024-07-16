@@ -32,6 +32,7 @@ export function Footer() {
           </div>
         </div>
         <hr />
+        {/* <h1>hello</h1> */}
       </footer>
     </>
   );

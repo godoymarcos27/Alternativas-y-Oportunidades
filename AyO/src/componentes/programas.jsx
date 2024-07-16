@@ -1,7 +1,7 @@
 import { Nav } from "./NAv";
 import { Footer } from "./footer";
 import Swal from "sweetalert2";
-
+import { Link } from 'react-router-dom'
 
 function alerta_t1() {
   Swal.fire({
@@ -47,8 +47,9 @@ export function Programas() {
               <button className="proyectos">Proyecto 3</button>
               <button className="proyectos">Proyecto 4</button>
               <button className="proyectos">Proyecto 5</button>
-            </div>
+            </div> <Link to="/poyecto1" className="active" style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
           </div>
+         
         </div>
       </section>
 <hr style={{ margin:"auto" , width:"97%"}}/>

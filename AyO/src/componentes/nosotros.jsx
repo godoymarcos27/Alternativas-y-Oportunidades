@@ -27,6 +27,12 @@ export function Nosotros() {
       <Nav img="https://media.istockphoto.com/id/1203758034/es/foto/gente-de-negocios-trabajando-en-la-oficina-por-la-noche.jpg?s=1024x1024&w=is&k=20&c=sRkyvcFGoA7VXHG262Nfe3VeYRpgoLuRm8ZPMTu7TtU=" />
 
       <div className="quienes_somos">
+        <div className="img-quienes_somos">
+          <img
+            src="https://skitterphoto.com/photos/skitterphoto-4252-default.jpg"
+            alt=""
+          />
+        </div>
         <div className="content_quienes_somos">
           <div className="titulo_quienes_somos"> Quiénes somos</div>
           <p>
@@ -50,12 +56,6 @@ export function Nosotros() {
             tempora ut veritatis molestias dicta laudantium, quod sit illum
             quaerat! Ipsum, pariatur!
           </p>
-        </div>
-        <div className="img-quienes_somos">
-          <img
-            src="https://skitterphoto.com/photos/skitterphoto-4252-default.jpg"
-            alt=""
-          />
         </div>
       </div>
 
@@ -108,9 +108,10 @@ export function Nosotros() {
         </div>
       </div>
 
-      <div className="mision_v_v">
+      {/* <div className="mision_v_v">
+
         <div className="titulo-mvv">
-          <h3>Mision, Vision y Valores</h3>
+          <h1>Mision, Vision y Valores</h1>
         </div>
 
         <div className="m_v_v">
@@ -178,68 +179,178 @@ export function Nosotros() {
             ></video>
           </div>
         </div>
+      </div> */}
+      <h1>Mision, Vision y Valores</h1>
+      <div className="mvv">
+        <div className="content">
+          <div className="botones">
+            <button onClick={mostrar_ocultar_mision}>
+              {show_hiden_mision ? "" : ""} Misión
+            </button>
+            <button onClick={mostrar_ocultar_vision}>
+              {" "}
+              {show_hiden_vision ? "" : ""}
+              Vision
+            </button>
+            <button onClick={mostrar_ocultar_valores}>
+              {" "}
+              {show_hiden_valores ? "" : ""}
+              Valores
+            </button>
+          </div>
+          {show_hiden_mision && (
+            <p>
+              {" "}
+              Contribuir a disminuir el riesgo social de los nin@s y jóvenes
+              trabajadores de los mercados, calles y avenidas de Tegucigalpa y
+              Comayagüela y sus familias, brindándoles servicios alternativos de
+              salud y educación a través de programas y actividades que
+              respondan a sus necesidades actuales, con énfasis en la
+              prevención, para su integración social y recuperación de sus
+              derechos, propiciando su participación y proyección social.
+            </p>
+          )}
+
+          {show_hiden_vision && (
+            <p>
+              Somos una institución que llega directamente a los beneficiarios
+              en su propio ambiente, incorporando metodologías innovadoras que
+              permiten su participación y generan procesos de superación
+              personal y familiar. En consonancia con la sostenibilidad a través
+              de capacitación, investigación y la incorporación de personas
+              profesionales en el campo con aptitud de servicio, dinámicos y
+              comprometidos socialmente por el desarrollo de honduras.
+            </p>
+          )}
+
+          {show_hiden_valores && (
+            <p>
+              VALORES Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit reiciendis laboriosam, rerum delectus quas
+              voluptates sequi odio labore. Natus tenetur sequi quas modi, nobis
+              sapiente, amet velit quae molestias cum reiciendis illo
+              voluptatibus enim quisquam iusto facere, temporibus doloremque
+              nisi. Placeat explicabo amet, asperiores molestiae quis soluta
+              adipisci atque iusto.
+            </p>
+          )}
+        </div>
+        <div className="video">
+          {" "}
+          <video
+            src="https://media.istockphoto.com/id/1752533608/es/v%C3%ADdeo/choca-los-cinco-empresarios-y-trabajo-en-equipo-con-colaboraci%C3%B3n-y-celebraci%C3%B3n-en-una-oficina.mp4?s=mp4-640x640-is&k=20&c=ToQ2_tr9wBD5uin5V3AysUnpk2xUA8vBZ5j_5I1L5LQ="
+            controls
+            autoPlay
+            playsInline
+            loop
+          ></video>
+        </div>
       </div>
-<div className="Nuestos_donantes"><h1>Nuestos Donantes</h1></div>
+
+      <div className="Nuestos_donantes">
+        <h1>Nuestos Donantes</h1>
+      </div>
       <div class="slider">
-    <div class="slide_donantes">
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Save-The-Children.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/World-Vision.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Alternativas-y-Oportunidades.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Pestalozzi.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Asoc.-Jovenes-Por-Honduras.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Child-Fund.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Asociacion-Compartir.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Aldeas-SOS.png" alt="Donante" />
-        </div>
+        <div class="slide_donantes">
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Save-The-Children.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/World-Vision.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Alternativas-y-Oportunidades.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Pestalozzi.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Asoc.-Jovenes-Por-Honduras.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Child-Fund.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Asociacion-Compartir.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Aldeas-SOS.png"
+              alt="Donante"
+            />
+          </div>
 
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Save-The-Children.png" alt="Donante" />
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Save-The-Children.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/World-Vision.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Alternativas-y-Oportunidades.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Pestalozzi.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Asoc.-Jovenes-Por-Honduras.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Child-Fund.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Asociacion-Compartir.png"
+              alt="Donante"
+            />
+          </div>
+          <div class="donante">
+            <img
+              src="https://redcoiproden.org/wp-content/uploads/2023/11/Aldeas-SOS.png"
+              alt="Donante"
+            />
+          </div>
         </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/World-Vision.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Alternativas-y-Oportunidades.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Pestalozzi.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Asoc.-Jovenes-Por-Honduras.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Child-Fund.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Asociacion-Compartir.png" alt="Donante" />
-        </div>
-        <div class="donante">
-            <img src="https://redcoiproden.org/wp-content/uploads/2023/11/Aldeas-SOS.png" alt="Donante" />
-        </div>
-       
-        
-
-
-    </div>
-</div>
-
-       
-      
+      </div>
 
       <Footer />
     </>

@@ -8,6 +8,8 @@ import { Programas } from "./componentes/programas";
 import { Biblioteca } from "./componentes/biblioteca";
 import { Contactanos } from "./componentes/contactanos";
 
+import { P1 } from "./componentes/poyecto1";
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
@@ -17,6 +19,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/programas" element={<Programas />}></Route>
         <Route path="/biblioteca" element={<Biblioteca />}></Route>
         <Route path="/contactanos" element={<Contactanos />}></Route>
+        <Route path="/poyecto1" element={<P1/>}></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

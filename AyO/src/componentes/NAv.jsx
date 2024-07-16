@@ -1,6 +1,16 @@
 
 import { Link } from 'react-router-dom'
+import React,{ useState } from 'react';
+
+
+
+
 export function Nav(props) {
+   const [open_menu, setOpen_menu]= useState(false)
+  const OpenMenu= ()=>{
+ ;
+  setOpen_menu(!open_menu)
+}
   return (
     <>
       <header>
@@ -11,14 +21,14 @@ export function Nav(props) {
             <img src="src/img/logo.png" alt="LOGO" />{" "}
           </a>
         </div>
-        <div className="bars">
+        <div className="bars" onClick={OpenMenu}>
           <div className="line"></div>
           <div className="line"></div>
           <div className="line"></div>
         </div>
 
         <nav className="nav-bar">
-          <ul>
+          <ul className= {open_menu ? 'open' : ''}>
             <li>
             <Link to="/" className="active">Inicio</Link>
             </li>
