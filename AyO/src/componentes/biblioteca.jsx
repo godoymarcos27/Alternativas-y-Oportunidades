@@ -27,7 +27,7 @@ function alerta_t1() {
 
       
 
-        <div className="blog"> 
+        <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">
             <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
 
@@ -40,7 +40,7 @@ function alerta_t1() {
            <button onClick={alerta_t1}>Leer Más</button>
         </div>
         </div>  
-        <div className="blog"> 
+        <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">
             <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
 
@@ -53,7 +53,7 @@ function alerta_t1() {
            <button>Leer Más</button>
         </div>
         </div>  
-        <div className="blog"> 
+        <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">
             <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
 
@@ -66,21 +66,7 @@ function alerta_t1() {
            <button>Leer Más</button>
         </div>
         </div>  
-        <div className="blog"> 
-             <div className="blog-img">
-            <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
-
-        </div>
-        <div className="blog-content">
-            <h3>Titulo</h3>
-            <div className="blog-text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam!</p>
-            </div>
-           <button>Leer Más</button>
-        </div>
-        </div>  
-
-        <div className="blog"> 
+        <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">
             <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
 
@@ -94,7 +80,21 @@ function alerta_t1() {
         </div>
         </div>  
 
-        <div className="blog"> 
+        <div data-aos="zoom-in" className="blog"> 
+             <div className="blog-img">
+            <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
+
+        </div>
+        <div className="blog-content">
+            <h3>Titulo</h3>
+            <div className="blog-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam!</p>
+            </div>
+           <button>Leer Más</button>
+        </div>
+        </div>  
+
+        <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">
             <img src="https://www.clarin.com/img/2024/02/19/xt29BsK6g_600x600__1.jpg" alt="" />
 

@@ -24,7 +24,7 @@ export function Programas() {
     <>
       <Nav img="https://www.recursosculturales.com/wp-content/uploads/2016/07/recursos-gratuitos-ONGs.jpeg" />
 
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img
@@ -53,7 +53,7 @@ export function Programas() {
         </div>
       </section>
 <hr style={{ margin:"auto" , width:"97%"}}/>
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img
@@ -78,7 +78,7 @@ export function Programas() {
         </div>
       </section>
       <hr style={{ margin:"auto" , width:"97%"}}/>
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img
@@ -104,7 +104,7 @@ export function Programas() {
       </section>
       <hr style={{ margin:"auto" , width:"97%"}}/>
 
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img
@@ -130,7 +130,7 @@ export function Programas() {
       </section>
       <hr style={{ margin:"auto" , width:"97%"}}/>
 
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img
@@ -155,7 +155,7 @@ export function Programas() {
         </div>
       </section>
       <hr style={{ margin:"auto" , width:"97%"}}/>
-      <section className="programas">
+      <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">
             <img

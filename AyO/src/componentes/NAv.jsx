@@ -1,20 +1,27 @@
 
 import { Link } from 'react-router-dom'
-import React,{ useState } from 'react';
-import { useSpring, animated } from '@react-spring/web';
+import React,{ useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 
 
 
 export function Nav(props) {
    const [open_menu, setOpen_menu]= useState(false)
+ 
+
   const OpenMenu= ()=>{
  ;
   setOpen_menu(!open_menu)
 }
+
+useEffect(() => {
+  AOS.init({ duration: 1000 });
+}, []);
   return (
     <>
-      <header>
+      <header >
         <div className="logo">
           {" "}
           <a href="index.html">
@@ -55,10 +62,10 @@ export function Nav(props) {
 
       <div className="portada">
     <img src={props.img} alt="portada"/>
-    <div className="portada-sombra"></div>
+    {/* <div className="portada-sombra"></div> */}
 
   </div>
-
+  
     </>
   );
 }

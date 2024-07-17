@@ -1,34 +1,27 @@
 import { Nav } from "./NAv";
 import { Footer } from "./footer";
 import Swal from "sweetalert2";
-
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function alerta_t1() {
   Swal.fire({
-      title: "Titulo",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam!",
-      imageUrl: "https://skitterphoto.com/photos/skitterphoto-11936-default.jpg",
-      imageWidth: 250,
-      imageHeight: 200,
-      showCloseButton: true,
-      imageAlt: "Custom image"
-      
-    });
-
-    
+    title: "Titulo",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem enim quia consequatur dolorum assumenda possimus quis architecto eum, ullam, officiis odit velit ipsum laboriosam odio modi? Commodi culpa nesciunt ducimus molestias adipisci quam officia quos, dolorem quo voluptatem earum velit alias quisquam est praesentium veniam!",
+    imageUrl: "https://skitterphoto.com/photos/skitterphoto-11936-default.jpg",
+    imageWidth: 250,
+    imageHeight: 200,
+    showCloseButton: true,
+    imageAlt: "Custom image",
+  });
 }
-
 
 export function Home() {
   return (
-
-
-    
     <>
       <Nav img="./src/img/home-portada.jpeg" />
 
-      <div className="boxes">
+      <div data-aos="zoom-int" className="boxes">
         <div className="box">
           <div className="box_img">
             <img
@@ -68,9 +61,17 @@ export function Home() {
       </div>
 
       <div className="titulo">
-        <span className="line"></span>
+        <span
+          className="line"
+          data-aos="fade-right"
+        
+        ></span>
         <h1>Bienvenido a Alternativas y Oportunidades</h1>
-        <span className="line"></span>
+        <span
+          className="line"
+          data-aos="fade-left"
+        
+        ></span>
       </div>
 
       <div className="home-card">
@@ -110,7 +111,7 @@ export function Home() {
         </div>
       </div>
 
-      <div className="cajas_data">
+      <div data-aos="flip-up" className="cajas_data">
         <div className="data">
           <img src="./src/img/1.png" alt="" />
         </div>
@@ -125,71 +126,84 @@ export function Home() {
         </div>
       </div>
 
- <h1>Galleria</h1>
-   
- <div className="galeria_home">
-     
-  <div className="container_galery">
+      <h1>Galleria</h1>
+
+      <div className="galeria_home" data-aos="zoom-in-down">
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-11936-default.jpg"
             alt=""
           />
-          <div class="overlay">Titulo <br /> <button onClick={alerta_t1}>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br />{" "}
+            <button onClick={alerta_t1}>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-12183-default.jpg"
             alt=""
-            
           />
-          <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-9740-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-4647-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-4627-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-4381-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-3997-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
           </div>
-          <div className="container_galery">
+        </div>
+        <div className="container_galery">
           <img
             src="https://skitterphoto.com/photos/skitterphoto-4625-default.jpg"
             alt=""
           />
-            <div class="overlay">Titulo <br /> <button>Leer más información</button></div>
-       </div>
+          <div class="overlay">
+            Titulo <br /> <button>Leer más información</button>
+          </div>
+        </div>
       </div>
 
-      
-    
       <Footer />
 
       {/* <div className="portada-sombra">

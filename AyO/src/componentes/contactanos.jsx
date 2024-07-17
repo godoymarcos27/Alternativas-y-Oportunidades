@@ -7,7 +7,8 @@ export function Contactanos() {
     <>
       <Nav img="https://img.freepik.com/fotos-premium/sitio-web-e-internet-contactenos-concepto-pagina-iconos-correo-electronico-chat-telefonico-simbolo-correo-telefonico-telefono-movil-pagina-sitio-web-contactenos-banner-web-amplio-espacio-copia-fondo-azul_256259-2730.jpg" />
       <h1 className="titulo-contactanos">CONTÁCTENOS</h1>
-      <div className="contactanos">
+      <div data-aos="fade-up"
+     data-aos-duration="1000" className="contactanos">
         <div className="contactos-contactanos">
 
           <div className="contacto-contactanos">

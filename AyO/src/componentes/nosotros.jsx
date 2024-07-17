@@ -61,7 +61,7 @@ export function Nosotros() {
 
       <h1>Qué hacemos</h1>
       <div className="about">
-        <div className="about-cajas">
+        <div data-aos="zoom-out-up" className="about-cajas">
           <div className="about_img">
             <img
               src="https://emoralesvet.com/wp-content/uploads/2015/12/icono-que-hacemos.png"
@@ -76,7 +76,7 @@ export function Nosotros() {
             </p>
           </div>
         </div>
-        <div className="about-cajas">
+        <div data-aos="zoom-out-up" className="about-cajas">
           <div className="about_img">
             <img
               src="https://emoralesvet.com/wp-content/uploads/2015/12/icono-que-hacemos.png"
@@ -91,7 +91,7 @@ export function Nosotros() {
             </p>
           </div>
         </div>
-        <div className="about-cajas">
+        <div data-aos="zoom-out-up" className="about-cajas">
           <div className="about_img">
             <img
               src="https://emoralesvet.com/wp-content/uploads/2015/12/icono-que-hacemos.png"
@@ -199,7 +199,7 @@ export function Nosotros() {
             </button>
           </div>
           {show_hiden_mision && (
-            <p>
+            <p data-aos="fade-right">
               {" "}
               Contribuir a disminuir el riesgo social de los nin@s y jóvenes
               trabajadores de los mercados, calles y avenidas de Tegucigalpa y
@@ -212,7 +212,7 @@ export function Nosotros() {
           )}
 
           {show_hiden_vision && (
-            <p>
+            <p data-aos="fade-right">
               Somos una institución que llega directamente a los beneficiarios
               en su propio ambiente, incorporando metodologías innovadoras que
               permiten su participación y generan procesos de superación
@@ -224,7 +224,7 @@ export function Nosotros() {
           )}
 
           {show_hiden_valores && (
-            <p>
+            <p data-aos="fade-right">
               VALORES Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit reiciendis laboriosam, rerum delectus quas
               voluptates sequi odio labore. Natus tenetur sequi quas modi, nobis
@@ -247,10 +247,10 @@ export function Nosotros() {
         </div>
       </div>
 
-      <div className="Nuestos_donantes">
+      <div  className="Nuestos_donantes">
         <h1>Nuestos Donantes</h1>
       </div>
-      <div class="slider">
+      <div  class="slider">
         <div class="slide_donantes">
           <div class="donante">
             <img
