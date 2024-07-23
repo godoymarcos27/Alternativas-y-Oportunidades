@@ -78,7 +78,7 @@ function alerta_t1() {
             </div>
            <button>Leer Más</button>
         </div>
-        </div>  
+        </div>   
 
         <div data-aos="zoom-in" className="blog"> 
              <div className="blog-img">

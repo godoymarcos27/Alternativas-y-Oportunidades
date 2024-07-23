@@ -77,7 +77,7 @@ export function Programas() {
           </div>
         </div>
       </section>
-      <hr style={{ margin:"auto" , width:"97%"}}/>
+      <hr style={{ margin:"auto" , width:"97%"}}/> 
       <section data-aos="zoom-in" className="programas">
         <div className="programa">
           <div className="img_programa">

@@ -19,7 +19,7 @@ body {
   background-color: #f4f5e1;
 }
 header {
-  position: relative;
+  position: fixed;
   background-color: white;
   width: 100%;
   height: 80px;
@@ -29,6 +29,7 @@ header {
   padding: 0 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   z-index: 100;
+ 
 }
 .logo img {
   width: 80px;
@@ -40,12 +41,19 @@ header {
   padding: 2px;
   border: solid 4.5px;
   border-radius: 10px;
+  
+}
+.nav-bar{
+ 
+position: relative;
+right: 15rem;
+
 }
 .nav-bar ul {
-  display: flex;
-
-  position: relative;
-  left: -15em;
+ 
+ display: flex;
+ 
+ 
 }
 
 .nav-bar ul li a {
@@ -56,7 +64,7 @@ header {
   padding: 10px 25px;
   border-radius: 15px;
   transition: 0.2s;
-  margin-top: 20px;
+  
 }
 /* .nav-bar ul li a:hover {
   background-color: #8FCEA5;
@@ -85,6 +93,32 @@ header {
 .nav-bar ul li a:hover:after {
   width: 100%;
 }
+.donar{
+  position: relative;
+  left:  13rem;
+  display: flex!important;
+  justify-content: start!important;
+}
+.donar a{
+ 
+  width: auto;
+  font-weight: bolder;
+
+  
+}
+.donar a:hover{
+  
+  
+  background-color: #009929;
+ color: white !important;
+ transition: .8s;
+
+  
+}
+.nav-bar ul .donar a:hover:after {
+  width: 
+  0;
+}
 
 
 .portada {
@@ -93,7 +127,7 @@ header {
 
 .portada img {
   width: 100%;
-  height: 38rem;
+  height: 40.1rem;
   object-fit: cover;
 }
 .portada-sombra {
@@ -217,11 +251,14 @@ h1 {
 }
 
 .cajas_data {
+ 
   display: flex;
  justify-content: center;
   flex-wrap: wrap;
   margin-top: 3rem ;
   margin-bottom: 3rem;
+  margin-left: .1rem;
+  margin-right: .1rem;
 }
 .data{
 
@@ -485,6 +522,8 @@ font-weight: bold;
 
 .content_programa h1 {
   margin-bottom: 2rem;
+  text-align: center;
+  margin: auto;
 }
 .content_programa p {
   text-align: justify;
@@ -515,6 +554,7 @@ font-weight: bold;
 }
 .contactanos {
   display: flex;
+  margin-bottom: .3rem;
   
 }
 .contactos-contactanos {
@@ -557,6 +597,7 @@ text-align: justify;
 .ubicacion iframe {
   width: 100%;
   height: 100%;
+
 }
 /* PLANTILLA BLOG */
 .blogs{
@@ -589,6 +630,7 @@ height: 18rem;
   height: 100%;
   width: 100%;
   padding: .5rem;
+
 
 
 }
@@ -673,11 +715,15 @@ footer {
 }
 
 
-@media (max-width: 900px) {
+
+
+@media (max-width: 985px) {
 
  /* NAV */
   header {
-    padding: 0px 30px;
+    position: relative;
+        padding: 0px 30px;
+   
   }
 
   .bars {
@@ -714,7 +760,8 @@ footer {
   .nav-bar ul {
     display: block;
     width: 100%;
-    margin: -20px auto 0 auto;
+    height: 530px;
+    margin: -20px auto 1 auto;
     position: relative;
     left: 0.01rem;
     transition: 0.5s;
@@ -733,13 +780,62 @@ footer {
     left: -1rem;
     color:#333;
   }
+
+  
+
+
+
+.donar{
+
+  position: relative;
+  left: -.01rem;
+ 
+ 
+}
+.donar a{
+  margin-top: 2rem!important;
+  
+  background-color: #009929;
+ color: white !important;
+  width: auto;
+  position: relative;
+margin: auto;
+  
+}
+
+  .portada {
+    width: 100%;
+    
+  }
+  
+  .portada img {
+    height: 13rem;
+    
+    
+  }
+  .portada-sombra {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.329);
+    top: 2px;
+    width: 100%;
+    height: 42.9rem;
+    z-index: 1;
+  }
+  .nav-bar ul li a:hover:after {
+    width: 50%;
+  }
+
    
   /* HOME */
+  .boxes{
+
+    margin-top: 5rem;
+  }
  .box{
-  
+ 
   margin: 1rem;
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
  }
 
   .titulo h1{
@@ -850,7 +946,7 @@ width: 100%;
  .img_programa{
   
   width: 100%;
-  
+  height: auto;
  }
  .img_programa img{
   
@@ -877,3 +973,5 @@ width: 100%;
  }
 
 }
+
+

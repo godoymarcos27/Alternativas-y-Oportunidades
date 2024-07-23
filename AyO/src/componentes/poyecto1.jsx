@@ -16,7 +16,7 @@ export function P1() {
 
     }
   return (
-    <>
+    <> 
 
 <Nav img="https://www.udep.edu.pe/hoy/wp-content/uploads/sites/49/2019/09/48602822407_953b2b62e6_o-Large.jpg"/>
 <h1>Proyectos</h1>

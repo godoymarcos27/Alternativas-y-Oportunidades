@@ -246,7 +246,7 @@ export function Nosotros() {
           ></video>
         </div>
       </div>
-
+ 
       <div  className="Nuestos_donantes">
         <h1>Nuestos Donantes</h1>
       </div>

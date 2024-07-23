@@ -1,4 +1,4 @@
-
+import {ArrowBigLeft } from "lucide-react";
 import { Link } from 'react-router-dom'
 import React,{ useState, useEffect } from 'react';
 import AOS from 'aos';
@@ -17,17 +17,19 @@ export function Nav(props) {
 }
 
 useEffect(() => {
-  AOS.init({ duration: 1000 });
+  AOS.init({ duration:1500 });
 }, []);
   return (
     <>
       <header >
         <div className="logo">
           {" "}
-          <a href="index.html">
+          <Link to="/" className="active">
+      
             {" "}
             <img src="src/img/logo.png" alt="LOGO" />{" "}
-          </a>
+          
+          </Link>
         </div>
         <div className="bars" onClick={OpenMenu}>
           <div className="line"></div>
@@ -44,7 +46,7 @@ useEffect(() => {
             <li>
             <Link to="/nosotros">Nosotros</Link>
             </li>
-
+ 
             <li>
             <Link to="/programas">Programas y Proyectos</Link>
             </li>
@@ -55,6 +57,9 @@ useEffect(() => {
 
             <li>
             <Link to="/contactanos">Contacto</Link>
+            </li>
+            <li className='donar'>
+            <a href="https://wa.me/+50433653580" target='blank'>Donar</a>
             </li>
           </ul>
         </nav>

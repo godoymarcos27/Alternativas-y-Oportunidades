@@ -13,7 +13,7 @@ function alerta_t1() {
     imageHeight: 200,
     showCloseButton: true,
     imageAlt: "Custom image",
-  });
+  }); 
 }
 
 export function Home() {
@@ -63,13 +63,13 @@ export function Home() {
       <div className="titulo">
         <span
           className="line"
-          data-aos="fade-right"
+         
         
         ></span>
         <h1>Bienvenido a Alternativas y Oportunidades</h1>
         <span
           className="line"
-          data-aos="fade-left"
+       
         
         ></span>
       </div>
@@ -111,7 +111,7 @@ export function Home() {
         </div>
       </div>
 
-      <div data-aos="flip-up" className="cajas_data">
+      <div data-aos="zoom-int" className="cajas_data">
         <div className="data">
           <img src="./src/img/1.png" alt="" />
         </div>
@@ -134,7 +134,7 @@ export function Home() {
             src="https://skitterphoto.com/photos/skitterphoto-11936-default.jpg"
             alt=""
           />
-          <div class="overlay">
+          <div className="overlay">
             Titulo <br />{" "}
             <button onClick={alerta_t1}>Leer más información</button>
           </div>
