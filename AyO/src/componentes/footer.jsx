@@ -38,6 +38,33 @@ export function Footer() {
         </div>
         <hr />
 
+<h1 >Buzon de Quejas</h1>
+        <div className="contactos">
+        <div className="contacto">
+            <div className="icon">
+              <Mail size={40} />
+            </div>
+            <div className="text">
+              <h4>Correo de Prueba</h4>
+              <p>correodeprueba@gmail.com</p>
+            </div>
+          </div>
+
+          <div className="contacto">
+            <div className="icon">
+              <Phone size={40} />
+            </div>
+            <div className="text">
+              <h4>Telefono de Prueba</h4>
+              <p>+504 XXXX-XXXX</p>
+            </div>
+          </div>
+        
+        </div>
+      
+      
+   
+  
        
         <div
           className="text-center p-4"

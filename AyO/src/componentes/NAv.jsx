@@ -40,7 +40,7 @@ useEffect(() => {
         <nav className="nav-bar"  style={{ display: open_menu ? 'block' : '' }}>
           <ul>
             <li>
-            <Link to="/" className="active">Inicio</Link>
+            <Link to="/"  className="active">Inicio</Link>
             </li>
 
             <li>

@@ -126,7 +126,7 @@ export function Home() {
         </div>
       </div>
 
-      <h1>Galleria</h1>
+      <h1 >Galleria</h1>
 
       <div className="galeria_home" data-aos="zoom-in-down">
         <div className="container_galery">
