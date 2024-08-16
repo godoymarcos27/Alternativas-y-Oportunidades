@@ -1,8 +1,9 @@
-import { Nav } from "./NAv";
+
 import { Footer } from "./footer";
 import Swal from "sweetalert2";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Slider } from "./portada_inicio";
 
 function alerta_t1() {
   Swal.fire({
@@ -19,9 +20,10 @@ function alerta_t1() {
 export function Home() {
   return (
     <>
-      <Nav img="./src/img/home-portada.jpeg" />
+   
+      <Slider  img_slider="./src/img/home-portada.jpeg"></Slider>
 
-      <div data-aos="zoom-int" className="boxes">
+      <div  data-aos="zoom-int" className="boxes">
         <div className="box">
           <div className="box_img">
             <img

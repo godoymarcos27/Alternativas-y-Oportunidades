@@ -42,12 +42,10 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button onClick={alerta_t1} className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
-            </div> <Link to="/poyecto1" className="active" style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
+            </div> 
           </div>
          
         </div>
@@ -68,11 +66,9 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
             </div>
           </div>
         </div>
@@ -93,11 +89,9 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
             </div>
           </div>
         </div>
@@ -119,11 +113,9 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
             </div>
           </div>
         </div>
@@ -134,7 +126,7 @@ export function Programas() {
         <div className="programa">
           <div className="img_programa">
             <img
-              src="https://gacetamedica.com/wp-content/uploads/2024/02/GettyImages-1332156617-1068x712.jpg"
+              src="https://diarioenfermero.es/wp-content/uploads/2021/02/enfermera-escolar-covid-1.jpg"
               alt=""
             />
           </div>
@@ -145,11 +137,9 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
             </div>
           </div>
         </div>
@@ -170,15 +160,14 @@ export function Programas() {
             </p>
             
             <div className="link_proyectos">
-              <button className="proyectos">Proyecto 1</button>
-              <button className="proyectos">Proyecto 2</button>
-              <button className="proyectos">Proyecto 3</button>
-              <button className="proyectos">Proyecto 4</button>
-              <button className="proyectos">Proyecto 5</button>
+              <div className="_proyectos">
+       <Link to="/poyecto1" className="active " style={{color:"#4b94a6"}}>Ver Proyectos del Programa</Link>
+          </div>
             </div>
           </div>
         </div>
       </section>
+      
       <Footer />
     </>
   );

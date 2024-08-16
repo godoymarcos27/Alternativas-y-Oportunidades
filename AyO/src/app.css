@@ -82,6 +82,7 @@ header {
 .donar a {
   width: auto;
   font-weight: bolder;
+  color: rgb(135, 135, 135) !important;
 }
 .donar a:hover {
   background-color: #009929;
@@ -91,7 +92,14 @@ header {
 .nav-bar ul .donar a:hover:after {
   width: 0;
 }
+.swal2-popup img {
+width: 4rem;
+}
 
+.carousel-item img{
+  height: 42rem;
+ 
+}
 .portada {
   width: 100%;
 }
@@ -370,6 +378,11 @@ h1 {
 
 .mvv button:hover {
   background-color: #f8af26;
+} .mvv button:active {
+  background-color: #f8af26;
+}
+.mvv button:focus {
+  background-color: #f8af26;
 }
 
 .quienes_somos {
@@ -479,9 +492,13 @@ h1 {
 }
 
 .link_proyectos {
-  margin-top: 1.5rem;
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+display: flex;
+justify-content: end;
+align-items: end;
+position: relative;
+
+top: 3rem;
+
 }
 .proyectos {
   width: 7rem;
@@ -493,6 +510,31 @@ h1 {
   margin: 0px 10px 0px 10px;
   margin-top: 0.6rem;
   margin-bottom: 0.4rem;
+}
+.proyectos_mostrar{
+  display: flex;
+justify-content: center;
+  flex-wrap: wrap;
+
+}
+.proyectos_mostrar_proyecto{
+  width: 24rem;
+  height: 13rem;
+  margin: 1rem;
+  cursor: pointer;
+
+  border-radius: 4rem 0 4rem 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; cursor: pointer;
+}
+.proyectos_mostrar_proyecto img{
+  border-radius: 4rem 0 4rem 0 !important;
+  width: 100%;
+  height: 100%;
+ 
+}
+.proyectos_mostrar_proyecto:hover{
+  transform: scale(1.03); 
+  transition: .5s; 
 }
 /* CONTACTANOS */
 
@@ -554,13 +596,15 @@ h1 {
 
 }
 .pdf_blog {
-  background-color: #009929;
+  position: relative;
+  left: 0;
+  
   display: flex;
   flex-direction: column;
 border: none;
-margin: 2rem;
-  width: 20rem;
-  height: 100%;
+margin: 1.9rem;
+  width: 15rem;
+  height: 20rem;
   margin-bottom: 2rem;
   border-radius: 10px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -647,7 +691,120 @@ footer {
 .contacto h2 {
   padding: 0px 14px 0px 14px;
 }
+.footer_pt2{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer_pt2_content{
+  width: 26rem;
+  height: 11rem;
+  margin: 10px;
+  background-color: #ffffff;
 
+
+}
+.footer_pt2_content img{
+  width: 11rem;
+  height: 10rem;
+  margin: auto;
+  margin-top: .5rem;
+border-radius: 100%;
+
+}
+.footer_pt2_content label{
+ font-weight: bold;
+ font-size: 21px;
+ 
+  color: #1e1e1f;
+ 
+  width: 100%;
+  position: relative;
+  top: .5rem;
+ text-align: center;
+}
+.footer_pt2_content ul li{
+  margin: 1rem;
+  
+}
+.buzon{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 75%;
+  width: 100%;
+  margin-top: 13px;
+
+}
+.contacto_buzon_email{
+ color: #25272e;
+  width: 50%;
+  height: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.contacto_buzon_numero{
+  color: #25272e;
+  width: 50%;
+  height: 100%;
+  display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+.contacto_buzon_numero_icon{
+  margin-bottom: 1rem;
+}
+.contacto_buzon_email_icon{
+  margin-bottom: 1rem;
+}
+.redes{
+
+  width: 100%;
+  height: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+/* .redes ul {
+
+  width: 100%;
+ 
+
+  
+} */
+.link_redes{
+
+  width: 4rem;
+  height: 4rem;
+ margin: .5rem;
+ 
+  border-radius: 50%;
+  
+}
+.link_redes img{
+
+  width: 95%;
+  height:95%;
+margin-top: .5px;
+margin-left: 7px;
+
+  
+  
+}
+.link_redes img:hover{
+
+  
+    
+    
+  transform: scale(1.09); 
+  transition: .5s; 
+  
+}
 @media (max-width: 985px) {
   /* NAV */
   header {
@@ -680,9 +837,7 @@ footer {
     /* overflow: hidden;  */
   }
 
-  .nav-bar.active {
-    height: 450px;
-  }
+  
 
   .nav-bar ul {
     display: block;
@@ -740,6 +895,10 @@ footer {
   .nav-bar ul li a:hover:after {
     width: 50%;
   }
+  .carousel-item img{
+    height: 22rem;
+   
+  }
 
   /* HOME */
   .boxes {
@@ -747,7 +906,7 @@ footer {
   }
   .box {
     margin: 1rem;
-    width: 8rem;
+    width: 9.5rem;
     height: 8rem;
   }
 
@@ -847,6 +1006,10 @@ footer {
   .content_programa {
     width: 100%;
   }
+  .link_proyectos{
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+  }
   .contactanos {
     flex-direction: column;
   }
@@ -859,4 +1022,19 @@ footer {
   .ubicacion {
     width: 100%;
   }
+  .footer_pt2{
+   display: flex;
+   
+   align-items: center;
+   flex-direction: row;
+
+   flex-wrap: wrap;
+
+  }
+  .footer_pt2_content{
+width: 19rem;
+padding: 12px;
+flex: 1 1 300px;
+  }
+ 
 }

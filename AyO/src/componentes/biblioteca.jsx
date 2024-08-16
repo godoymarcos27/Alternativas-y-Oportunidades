@@ -1,5 +1,5 @@
 import { Nav } from "./NAv";
-import Swal from "sweetalert2";
+
 import { Footer } from "./footer";
 
 export function Biblioteca() {
@@ -57,6 +57,42 @@ export function Biblioteca() {
           </div>
         </div>
 
+
+        <div className="pdf_blog">
+          <div className="img_pdf">
+            <img
+              src="https://image.slidesharecdn.com/intro-es-150703180317-lva1-app6892/75/Intro-es-1-2048.jpg"
+              alt=""
+            />
+          </div>
+          <div className="btn_blog">
+            <a href="../src/pdf/derechos.pdf" target="_blank" className="pdf_ver">Ver o Descargar</a>
+          </div>
+        </div>
+
+        <div className="pdf_blog">
+          <div className="img_pdf">
+            <img
+              src="https://online.fliphtml5.com/ofxzj/qdwl/files/large/1.jpg?1651260990"
+              alt=""
+            />
+          </div>
+          <div className="btn_blog">
+          <a href="../src/pdf/derechos.pdf" target="_blank" className="pdf_ver">Ver o Descargar</a>
+          </div>
+        </div>
+
+        <div className="pdf_blog">
+          <div className="img_pdf">
+            <img
+              src="https://repositorio-chepes.sedesol.gob.hn/server/api/core/bitstreams/72eb9d4b-980e-440b-9367-d8c6b8c784b9/content"
+              alt=""
+            />
+          </div>
+          <div className="btn_blog">
+          <a href="../src/pdf/derechos.pdf" target="_blank" className="pdf_ver">Ver o Descargar</a>
+          </div>
+        </div>
         
       </div>
 
